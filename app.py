@@ -38,8 +38,8 @@ class VideoProcessor:
         	s_ = predictor(gray, rect)
         	s = face_utils.shape_to_np(s_)
 
-    #    for(i, y) in s:
-    #    	cv2.circle(img, (i,y), 2, (0, 255, 0), -1)
+        for(i, y) in s:
+        	cv2.circle(img, (i,y), 2, (0, 255, 0), -1)
 
         if i==0:
                 print("Total number of face landmarks detected ",len(s_.parts()))
